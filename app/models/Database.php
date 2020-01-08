@@ -3,9 +3,9 @@
         public $conn;
         private $stmt;
         private $sql;
-        private $host = "db4free.net";
-        private $user = "expo_pro";
-        private $pass = "password21";
+        private $host = "localhost";
+        private $user = "root";
+        private $pass = "";
         private $dbname = "expo_project";
         
         protected function __construct() {
