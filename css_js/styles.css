@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+}
+
+.margin-top {
+    margin:30px auto
+}
+
+.margin-top-10 {
+    margin-top:10px
+}
+
+.title {
+    font-family: 'PT Sans', sans-serif;
+}
