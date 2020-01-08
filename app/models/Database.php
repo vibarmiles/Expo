@@ -3,9 +3,13 @@
         public $conn;
         private $stmt;
         private $sql;
+        private $host = "db4free.net";
+        private $user = "expo_pro";
+        private $pass = "password21";
+        private $dbname = "expo_project";
         
         protected function __construct() {
-            $this->conn = new mysqli('localhost', 'root', '', 'expo_project');
+            $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
             return $this->conn;
         }
 
