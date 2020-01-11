@@ -10,15 +10,15 @@
             parent::select("*", "contest", function() {
                 while($row = $this->result->fetch_assoc()) {
                     echo "<tr class='row'>
-                        <td class='col-sm-6'>$row[criteria]"; 
+                        <td class='col-lg-8'>$row[criteria]"; 
                         
                         if(!empty($row['description'])) {
                             echo " ($row[description])";
                         }
 
                     echo "</td>
-                        <td class='col-sm-4'>$row[percentage]</td>
-                        <td class='col-sm-2 text-center'><a class='btn btn-warning' style='margin-right:10px' href='admin?editCri=$row[id]&cri=$row[criteria]&desc=$row[description]&perc=$row[percentage]'>Edit</a><a class='btn btn-danger' href='admin?delCri=$row[id]'>Delete</a></td>
+                        <td class='col-lg-2'>$row[percentage]</td>
+                        <td class='col-lg-2 text-center'><div class='row justify-content-around pl-2 pr-2'><a class='btn btn-warning col-5' href='admin?editCri=$row[id]&cri=$row[criteria]&desc=$row[description]&perc=$row[percentage]'>Edit</a><a class='btn btn-danger col-5' href='admin?delCri=$row[id]'>Delete</a></td>
                     </tr>";
                 }
             });

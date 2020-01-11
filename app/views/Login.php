@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="card col-sm-4 margin-top">
+    <div class="card col-md-4 margin-top">
         <form action="LoginModel" method="POST" class="form-horizontal card-body">
             <div class="form-group">
                 <h1 class="text-center">Login</h1>
@@ -20,13 +20,27 @@
                 ?>
             </div>
             <div class="form-group">
-                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="Username" required>
+                </div>
             </div>
             <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                </div>
             </div>
             <div class="form-group">
-                <input type="submit" name="submit" class="btn btn-primary btn-block" value="Login">
+                <input type="submit" name="submit" class="btn btn-primary btn-block input-lg" value="Login">
             </div>
         </form>
     </div>

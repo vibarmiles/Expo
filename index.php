@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Expo</title>
     <link href="css_js/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css_js/fontawesome-free-5.12.0-web/css/all.min.css">
     <link rel="stylesheet" href="css_js/styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php 

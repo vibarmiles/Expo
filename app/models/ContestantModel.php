@@ -10,9 +10,9 @@
             parent::select("*", "contestants", function() {
                 while($row = $this->result->fetch_assoc()) {
                     echo "<tr class='row'>
-                        <td class='col-sm-6'>$row[lastName], $row[firstName]</td>
-                        <td class='col-sm-4'>$row[id]</td>
-                        <td class='col-sm-2 text-center'><a class='btn btn-warning' style='margin-right:10px' href='admin?editCon=$row[id]&fname=$row[firstName]&lname=$row[lastName]'>Edit</a><a class='btn btn-danger' href='admin?delCon=$row[id]'>Delete</a></td>
+                        <td class='col-lg-8'>$row[lastName], $row[firstName]</td>
+                        <td class='col-lg-2'>$row[id]</td>
+                        <td class='col-lg-2 text-center'><div class='row justify-content-around pl-2 pr-2'><a class='btn btn-warning col-5' href='admin?editCon=$row[id]&fname=$row[firstName]&lname=$row[lastName]'>Edit</a><a class='btn btn-danger col-5' href='admin?delCon=$row[id]'>Delete</a></div></td>
                     </tr>";
                 }
             });

@@ -3,7 +3,7 @@
     $dash = new Dashboard;
 ?>
 
-<h1 class="title jumbotron text-center"><?php echo $ad->title(); ?></h1>
+<h1 class="jumbotron text-center"><?php echo $ad->title(); ?></h1>
 
 <div class="container">
     <!-- <p class="text-center"><?php  ?></p> -->
